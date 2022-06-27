@@ -38,6 +38,8 @@ define(['N/log', 'N/search', 'N/format', 'N/runtime'],
             });
         }
     var hi;
+    var hello;
+    
 
 
         /**

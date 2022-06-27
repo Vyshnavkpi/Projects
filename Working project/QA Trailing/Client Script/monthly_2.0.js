@@ -37,7 +37,7 @@ define(['N/log', 'N/search', 'N/format', 'N/runtime'],
                 value: 'Father'
             });
         }
-
+    var hi;
 
 
         /**

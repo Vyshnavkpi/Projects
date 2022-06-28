@@ -37,7 +37,7 @@ define(['N/log', 'N/ui/serverWidget', 'N/record', 'N/format', 'N/config', 'N/sea
                 var vendor = purRec.getValue({ //Get employee ID
                     fieldId: "entity"
                 });
-
+var d;
                 if (vendor) {
                     //load employee record
                     var venRec = record.load({

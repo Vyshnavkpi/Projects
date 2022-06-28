@@ -10,7 +10,7 @@ function fieldChange(type,name) {
         }
     }
 }
-
+var l;
 function saveRecord(type) {
     alert("Are you sure to Proceed");
 

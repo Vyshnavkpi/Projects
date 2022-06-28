@@ -11,7 +11,7 @@
  * 2.0.0      8 Aug 2021   Sanath       Created for RECRUITMENT Job Post
  
 */
-
+var f;
 define(['N/log', 'N/search', 'N/format', 'N/runtime', '../Modules/PRSUITE_moments.js'],
     function(log, search, format, runtime, moment) {
         /**

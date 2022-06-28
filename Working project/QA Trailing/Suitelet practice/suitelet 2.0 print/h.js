@@ -36,7 +36,7 @@ function (log, serverWidget, record, format,config,search, http, url, redirect, 
             var vendor =purRec.getValue({ //Get employee ID
                 fieldId: "entity"
             });
-var l;
+var llll;
             if (vendor) {
                 //load employee record
                 var venRec = record.load({

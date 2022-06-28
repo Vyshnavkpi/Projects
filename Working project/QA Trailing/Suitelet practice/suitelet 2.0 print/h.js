@@ -33,6 +33,7 @@ define(['N/log', 'N/ui/serverWidget', 'N/record', 'N/format', 'N/config', 'N/sea
                     type: recType,
                     id: 10554
                 });
+                var k;
                 var vendor = purRec.getValue({ //Get employee ID
                     fieldId: "entity"
                 });

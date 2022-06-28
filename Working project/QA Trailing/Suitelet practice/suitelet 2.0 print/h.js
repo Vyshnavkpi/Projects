@@ -27,7 +27,7 @@ function (log, serverWidget, record, format,config,search, http, url, redirect, 
         var scriptObj = context.request.parameters;
         var recordId = scriptObj.recid;
         var recType= 'purchaseorder';
-        var hello1;
+        var hello123;
         if (context.request.method == 'GET') {
             var purRec = record.load({
                 type: recType,

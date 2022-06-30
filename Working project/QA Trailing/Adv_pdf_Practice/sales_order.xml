@@ -108,7 +108,8 @@
 	<td align="right" colspan="4">${item.amount}</td>
 	<td align="right" colspan="4">${item.amount}</td>
 	</tr>
-	</#list><!-- end items --></table>
+	</#list><!-- end items -->
+</table>
 
 <hr style="width: 100%; color: #d3d3d3; background-color: #d3d3d3; height: 1px;" /></#if>
 <table style="page-break-inside: avoid; width: 100%; margin-top: 10px;"><tr>

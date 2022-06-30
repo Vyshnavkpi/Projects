@@ -125,6 +125,7 @@
 	<td background-color="#ffffff" colspan="4">&nbsp;</td>
 	<td align="right" style="font-weight: bold; color: #333333;">${record.total@label}</td>
 	<td align="right">${record.total}</td>
-	</tr></table>
+	</tr>
+</table>
 </body>
 </pdf>

@@ -1,7 +1,7 @@
 function printNewLH(request, response) {
-    // var invID = request.getParameter("recid");
-    // var bb=9;
-    var purchRec = nlapiLoadRecord('Invoice', 10805);
+    var invID = request.getParameter("recid");
+    var bb=9;
+    var purchRec = nlapiLoadRecord('invoice', 10805);
     var renderer = nlapiCreateTemplateRenderer();
     var template = '';
     template = +'<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">';
@@ -209,6 +209,6 @@ function printNewLH(request, response) {
     renderer.addRecord('record', purchRec);
     var xml = renderer.renderToString();
     var file = nlapiXMLToPDF(xml);
-    response.setContentType('PDF', 'Invoice' + purchRec.getFieldValue("id") + '.pdf', 'inline');
+    response.setContentType('PDF', 'invoice' + purchRec.getFieldValue("id") + '.pdf', 'inline');
     response.write(file.getValue());
 }

@@ -1,7 +1,6 @@
 function printNewLH(request, response) {
     var invID = request.getParameter("recid");
-    var bb=9;
-    var purchRec = nlapiLoadRecord('invoice', 10805);
+    var purchRec = nlapiLoadRecord('invoice', 10785);
     var renderer = nlapiCreateTemplateRenderer();
     var template = '';
     template = +'<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">';
@@ -24,7 +23,7 @@ function printNewLH(request, response) {
     template = +'            <table class="header" style="width: 100%;"><tr>';
     template = +'	<td rowspan="3"><#if companyInformation.logoUrl?length != 0><img src="${companyInformation.logoUrl}" style="float: left; margin: 7px" /> </#if> <span class="nameandaddress">${companyInformation.companyName}</span><br /><span class="nameandaddress">${companyInformation.addressText}</span></td>';
     template = +'	<td align="right"><span class="title">${record@title}</span></td>';
-    template = +'	</tr>';     
+    template = +'	</tr>';
     template = +'	<tr>';
     template = +'	<td align="right"><span class="number">#${record.tranid}</span></td>';
     template = +'	</tr>';

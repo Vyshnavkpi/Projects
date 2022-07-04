@@ -13,6 +13,7 @@
 	<#elseif .locale == "th_TH">
 		<link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
 	</#if>
+	
     <macrolist>
         <macro id="nlheader">
             <table style="width: 100%; font-size: 10pt;"><tr>

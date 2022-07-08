@@ -8,7 +8,7 @@
  * Includes Purchase Print
  *
  * Version    Date            Author           Remarks
- * 1.0.0      5 July 2022     C Vyshnav        Created for Practice
+ * 2.0.0      5 July 2022     C Vyshnav        Created for Practice
  
  */
 //  define(['N/log','N/ui/serverWidget', 'N/record', 'N/search', 'N/https', 'N/url', 'N/redirect', 'N/task', 'N/runtime'],
@@ -33,20 +33,20 @@ define(['N/log', 'N/ui/serverWidget', 'N/record', 'N/format', 'N/config', 'N/sea
                     type: recType,
                     id: 10517
                 });
-                // var vendor = purRec.getValue({ //Get employee ID
-                //     fieldId: "entity"
-                // });
+                var vendor = purRec.getValue({ //Get employee ID
+                    fieldId: "entity"
+                });
 
-                // if (vendor) {
-                //     //load employee record
-                //     var venRec = record.load({
-                //         type: 'vendor',
-                //         id: vendor
-                //     });
-                //     empFname = venRec.getValue({
-                //         fieldId: "entityid"
-                //     });
-                // }
+                if (vendor) {
+                    //load employee record
+                    var venRec = record.load({
+                        type: 'vendor',
+                        id: vendor
+                    });
+                    empFname = venRec.getValue({
+                        fieldId: "entityid"
+                    });
+                }
 
 				var xml ='<?xml version="1.0"?>';
 				xml+='<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">';

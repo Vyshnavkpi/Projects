@@ -16,7 +16,7 @@ define(['N/render', 'N/search','N/file','N/log'], function(render, search,file,l
         //     name:'custrecord_student_studentid',
  
         // }));
-
+ 
         col.push(search.createColumn({
             name:'custrecord_friends_name',
  

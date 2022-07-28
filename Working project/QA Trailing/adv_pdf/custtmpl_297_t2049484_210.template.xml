@@ -81,7 +81,8 @@
 	<td colspan="3" style="padding: 2;">${record.billaddress}</td>
 	<td colspan="3" style="padding: 2;">${record.shipaddress}</td>
 	<td align="right" colspan="5" style="font-size: 28pt; padding-top: 20px; background-color: #e3e3e3;">${record.total}</td>
-	</tr></table>
+	</tr>
+	</table>
 
 <table style="width: 100%; margin-top: 10px;"><tr>
 	<th>${record.paymentmethod@label}</th>
@@ -133,19 +134,15 @@
 	<td align="center">${record.taxtotal}</td>
 	<td align="right">
 		<table>
-			<tr style=" line-height: 150%; padding-top:-7px; font-size: 13px;">
+			<tr style=" line-height: 150%; padding-top:-7px; font-size: 15px;">
 			<td background-color="#ffffff" colspan="4">&nbsp;</td>
 			<td align="right" style="font-weight: bold; color: #333333;">${record.total@label}</td>
 			<td align="right">${record.total}</td>
 			</tr>
 		</table>
-	
 	</td>
 	</tr>
-	
 </table>
-
-
 
 </body>
 </pdf>

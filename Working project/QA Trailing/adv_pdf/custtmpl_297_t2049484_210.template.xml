@@ -124,23 +124,23 @@
 
 <table style="page-break-inside: avoid; width: 100%; margin-top: 10px; margin-left:-60px;">
 	<tr>
-	<td colspan="4">&nbsp;</td>
-	<td align="center" style="font-weight: bold; color: #333333;">${record.subtotal@label}</td>
-	<td align="center">${record.subtotal}</td>
-	</tr>
-	<tr>
-	<td colspan="4">&nbsp;</td>
-	<td align="center" style="font-weight: bold; color: #333333;">${record.taxtotal@label} (${record.taxrate}%)</td>
-	<td align="center">${record.taxtotal}</td>
-	<td align="right">
-		<table>
-			<tr style=" line-height: 150%; padding-top:-7px; font-size: 15px;">
-			<td background-color="#ffffff" colspan="4">&nbsp;</td>
-			<td align="right" style="font-weight: bold; color: #333333;">${record.total@label}</td>
-			<td align="right">${record.total}</td>
-			</tr>
-		</table>
-	</td>
+		<td colspan="4">&nbsp;</td>
+		<td align="center" style="font-weight: bold; color: #333333;">${record.subtotal@label}</td>
+		<td align="center">${record.subtotal}</td>
+		</tr>
+		<tr>
+		<td colspan="4">&nbsp;</td>
+		<td align="center" style="font-weight: bold; color: #333333;">${record.taxtotal@label} (${record.taxrate}%)</td>
+		<td align="center">${record.taxtotal}</td>
+		<td align="right">
+			<table>
+				<tr style=" line-height: 150%; padding-top:-7px; font-size: 15px;">
+					<td background-color="#ffffff" colspan="4">&nbsp;</td>
+					<td align="right" style="font-weight: bold; color: #333333;">${record.total@label}</td>
+					<td align="right">${record.total}</td>
+				</tr>
+			</table>
+		</td>
 	</tr>
 </table>
 

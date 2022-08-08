@@ -152,37 +152,84 @@ function printNewLH(request, response) {
     // template += '	</br>';
     template += '<table style="border:1px solid black;width:100%; margin-top:20px;" >';
     template += '	<tr>';
-    template += '	<td style="border-right:1px solid black;">';
-    template += '			<p>otherrefnum</p>';
-    template += '			<P>AL0408</P>';
-    template += '			<P>P.O Box 18220</P>';
-    template += '			<P>Dubai </P>';
+    template += '	<td style="">';
+    template += '			<p>OtherrefNum :</p>';
+    template += '			<P>P.O Box :</P> ';
+    template += '			<P>Dubai  </P>';
     template += '			<P>United Arab Emirates</P>';
-    template += '			<P>TRN : 100236819700003</P>';
-    template += '			<P>Tel # +97148872211</P>';
-    template += '			<P>Fax # +97148872212</P>';
-    template += '			<P>Attn : Bakker / Pragu</P>';
+    template += '			<P>TRN  :</P>';
+    template += '			<P>Telephone:</P>';
+    template += '			<P>Fax # : </P>';
+    template += '			<P>Attn  :</P>';
+    template += '	</td>';
+
+   
+
+    template += '	<td style="border-right:1px solid black; ">';
+    
+    template += '			<p></p>';
+    template += '			<p></p>';
+    template += '			<P>18220</P>';
+    template += '			<P></P>';
+    template += '			<P></P>';
+    template += '			<P></P>';
+    template += '			<P></P>';
+    template += '			<p></p>';
+    template += '			<P>100236819700003</P>';
+    template += '			<P>+97148872211</P>';
+    template += '			<P>+97148872212</P>';
+    template += '			<P>Bakker / Pragu</P>';
     template += '		</td>';
-    template += '		<td style="border-right:1px solid black;">';
-    template += '			<P>Contract: QT-L60477-21</P>';
-    template += '			<P>LPO No:</P>';
-    template += '			<P>PayTerms: 90 Days from Date of </P>';
+    
+
+    template += '		<td style=" margin-left:0px;">';
+    template += '			<P>Contract: </P>';
+    template += '			<P>LPO No :</P>';
+    template += '			<P>PayTerms: </P>';
     template += '	';
-    template += '			<P>Invoice</P>';
-    template += '			<P>Pay Due: 15-Feb-2022</P>';
-    template += '			<P>Sales Rep: MELWYN D COSTA</P>';
-    template += '			<P>Site: JAFZA / TECHNOPARK.</P>';
+    template += '			<P><b>Invoice</b></P>';
+    template += '			<P>Pay Due: </P>';
+    template += '			<P>Sales Rep: </P>';
+    template += '			<P>Site: </P>';
     template += '';
     template += '		</td>';
-    template += '		<td style="border-right:1px solid black;">';
-    template += '			<P>A/C No : 01289015101</P>';
-    template += '			<P>IBAN No : AE490440000001289015101</P>';
-    template += '			<P>STANDARD CHARTERED BANK </P>';
-    template += '			<P>SWIFT No : SCBLAEADXXX</P>';
-    template += '			<P>A/C Name : Al Faris Equipment</P>';
-    template += '			<P>Rentals(L.L.C)</P>';
-    template += '			<P>All bank transfer charges to be borne by customer</P>';
+
+
+    template += '		<td >';
+    template += '			<P>QT-L60477-21</P>';
+    template += '			<P></P>';
+    template += '			<P></P>';
+    template += '			<P>90 Days from Date of </P>';
+    template += '	';
+    template += '			<P></P>';
+    
+    template += '			<P>15-Feb-2022</P>';
+    template += '			<P>MELWYN D COSTA</P>';
+    template += '			<P>JAFZA / TECHNOPARK.</P>';
+    template += '';
     template += '		</td>';
+
+    template += '		<td style="border-left:1px solid black;">';
+    template += '			<P>A/C No : </P>';
+    template += '			<P>IBAN No : </P>';
+    template += '			<P><b>STANDARD CHARTERED BANK </b></P>';
+    template += '			<P>SWIFT No : </P>';
+    template += '			<P>A/C Name :</P>';
+    template += '			<P><b>Rentals(L.L.C)</b></P>';
+    template += '			<P><b>All bank transfer charges to be carried by customer</b></P>';
+    template += '		</td>';
+
+    template += '		<td style="border-right:1px solid black;">';
+    template += '			<P>01289015101</P>';
+    template += '			<P>AE490440000001289015101</P>';
+    template += '			<P> </P>';
+    template += '			<P> </P>';
+    template += '			<P>SCBLAEADXXX</P>';
+    template += '			<P> Al Faris Equipment</P>';
+    template += '			<P></P>';
+    template += '			<P></P>';
+    template += '		</td>';
+
     template += '	</tr>';
     template += '';
     template += '	<tr colspan="3"  style="border-top:1px solid black;">';
@@ -212,8 +259,8 @@ function printNewLH(request, response) {
     template += '	</#list>';
     template += '	<tr style="border-top:1px solid black;">';
     template += '		<td colspan="2" style="border-right:1px solid black;">Total</td>';
-    template += '		<td style="border-right:1px solid black;" align="right">${totalrate}</td>';
-    template += '		<td style="border-right:1px solid black;" align="right">${totalrate}</td>';
+    template += '		<td style="border-right:1px solid black;" align="right">${totalrate?string("##,#00.00")}</td>';
+    template += '		<td style="border-right:1px solid black;" align="right">${totalrate?string("##,#00.00")}</td>';
     template += '	</tr>';
     template += '</table>';
     template += '</#if>';
@@ -235,12 +282,12 @@ function printNewLH(request, response) {
     template += '		<td style="border-right:1px solid black;">l297217</td>';
     template += '		<td style="border-right:1px solid black;">25 TON TRUCK<br></br> MOUNTED CRANE <br></br> Start Date:30/9/2021</td>';
     template += '		<td style="border-right:1px solid black;"></td>';
-    template += '		<td style="border-right:1px solid black;">4 00 Hrs</td>';
+    template += '		<td style="border-right:1px solid black;">4:00 Hrs</td>';
     template += '		<td style="border-right:1px solid black;"></td>';
-    template += '		<td style="border-right:1px solid black;">400 00</td>';
-    template += '		<td style="border-right:1px solid black;">0 0</td>';
-    template += '		<td style="border-right:1px solid black;">0 00</td>';
-    template += '		<td style="border-right:1px solid black;">400 00</td>';
+    template += '		<td style="border-right:1px solid black;">400.00</td>';
+    template += '		<td style="border-right:1px solid black;">0.0</td>';
+    template += '		<td style="border-right:1px solid black;">0.00</td>';
+    template += '		<td style="border-right:1px solid black;">400.00</td>';
     template += '	</tr>';
     template += '		<tr style="border-top:1px solid black;">';
     template += '		<td colspan="6" style="border-right:1px solid black;">Total Value in AED</td>';
@@ -262,13 +309,13 @@ function printNewLH(request, response) {
     template += '	<td><b>E.O.E</b></td>';
     template += '</tr>';
     template += '<tr>';
-    template += '	<td>Received by:______________________</td>';
+    template += '	<td>Received by:  ______________________</td>';
     template += '	';
     template += '	<td><b>For AI Faris Equipment Rentals(L.L.C)</b></td>';
     template += '';
     template += '</tr>';
     template += '<tr>';
-    template += '	<td>Received date:____________________</td>';
+    template += '	<td>Received date:______________________</td>';
     template += '	<td></td>';
     template += '	</tr>';
     template += '	<tr>';

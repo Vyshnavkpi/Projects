@@ -309,7 +309,7 @@ function printNewLH(request, response) {
     template += '	<td><b>E.O.E</b></td>';
     template += '</tr>';
     template += '<tr>';
-    template += '<td>Received by:  ______________________</td>';
+    template += '<td >Received by:______________________</td>';
     template += '';
     template += '<td><b>For AI Faris Equipment Rentals(L.L.C)</b></td>';
     template += '';

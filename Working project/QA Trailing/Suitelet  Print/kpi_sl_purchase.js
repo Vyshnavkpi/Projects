@@ -8,7 +8,7 @@
  * Includes invoicePrint
  *
  * Version    Date            Author        Remarks
- * 1.0.0      17 Nov 2021     Arshitha MS        Created for GRN print
+ * 1.0.0      17 Nov 2021     XYZ        Created for GRN print
  
  */
 //  define(['N/log','N/ui/serverWidget', 'N/record', 'N/search', 'N/https', 'N/url', 'N/redirect', 'N/task', 'N/runtime'],
